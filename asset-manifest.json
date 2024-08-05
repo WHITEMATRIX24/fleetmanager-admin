@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/fleetmanager-admin/static/css/main.5bf7f401.css",
-    "main.js": "/fleetmanager-admin/static/js/main.b8a8a6cf.js",
-    "static/js/453.ba882c7e.chunk.js": "/fleetmanager-admin/static/js/453.ba882c7e.chunk.js",
-    "static/media/videoplayback.webm": "/fleetmanager-admin/static/media/videoplayback.7b0ce3851d68f37f11ff.webm",
-    "static/media/bg.PNG": "/fleetmanager-admin/static/media/bg.91b04ce21ef23c62b536.PNG",
-    "static/media/logo.png": "/fleetmanager-admin/static/media/logo.e5358289b41b5248b164.png",
-    "static/media/GothamLight.ttf": "/fleetmanager-admin/static/media/GothamLight.03e7ff609ba3bf798fa4.ttf",
-    "static/media/Gotham-Bold.otf": "/fleetmanager-admin/static/media/Gotham-Bold.f9a5c9247af2c80333f4.otf",
-    "index.html": "/fleetmanager-admin/index.html",
-    "main.5bf7f401.css.map": "/fleetmanager-admin/static/css/main.5bf7f401.css.map",
-    "main.b8a8a6cf.js.map": "/fleetmanager-admin/static/js/main.b8a8a6cf.js.map",
-    "453.ba882c7e.chunk.js.map": "/fleetmanager-admin/static/js/453.ba882c7e.chunk.js.map"
+    "main.css": "/fleetmanager-admin.github.io/static/css/main.42ddf5a6.css",
+    "main.js": "/fleetmanager-admin.github.io/static/js/main.ce5c8013.js",
+    "static/js/453.ba882c7e.chunk.js": "/fleetmanager-admin.github.io/static/js/453.ba882c7e.chunk.js",
+    "static/media/videoplayback.webm": "/fleetmanager-admin.github.io/static/media/videoplayback.7b0ce3851d68f37f11ff.webm",
+    "static/media/bg.PNG": "/fleetmanager-admin.github.io/static/media/bg.91b04ce21ef23c62b536.PNG",
+    "static/media/logo.png": "/fleetmanager-admin.github.io/static/media/logo.e5358289b41b5248b164.png",
+    "static/media/GothamLight.ttf": "/fleetmanager-admin.github.io/static/media/GothamLight.03e7ff609ba3bf798fa4.ttf",
+    "static/media/Gotham-Bold.otf": "/fleetmanager-admin.github.io/static/media/Gotham-Bold.f9a5c9247af2c80333f4.otf",
+    "index.html": "/fleetmanager-admin.github.io/index.html",
+    "main.42ddf5a6.css.map": "/fleetmanager-admin.github.io/static/css/main.42ddf5a6.css.map",
+    "main.ce5c8013.js.map": "/fleetmanager-admin.github.io/static/js/main.ce5c8013.js.map",
+    "453.ba882c7e.chunk.js.map": "/fleetmanager-admin.github.io/static/js/453.ba882c7e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bf7f401.css",
-    "static/js/main.b8a8a6cf.js"
+    "static/css/main.42ddf5a6.css",
+    "static/js/main.ce5c8013.js"
   ]
 }
