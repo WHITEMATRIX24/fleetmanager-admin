@@ -7,7 +7,7 @@ const TotalVehicle = () => {
     const [visibleVehicles, setVisibleVehicles] = useState(8); // State to manage visible vehicles
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/vehicles')
+        fetch('https://fleetmanager-admin.onrender.com/api/vehicles')
             .then(response => response.json())
             .then(data => {
                 if (data.vehicles && Array.isArray(data.vehicles)) {
@@ -22,7 +22,7 @@ const TotalVehicle = () => {
     const getImageSrc = (image) => {
         if (!image) return '';
         if (image.startsWith('uploads\\') || image.startsWith('uploads/')) {
-            return `http://localhost:5000/${image.replace(/\\/g, '/')}`;
+            return `https://fleetmanager-admin.onrender.com/${image.replace(/\\/g, '/')}`;
         } else {
             return `data:image/png;base64,${image}`;
         }

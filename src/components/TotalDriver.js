@@ -9,7 +9,7 @@ const TotalDriver = () => {
     const driversPerPage = 8;
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/drivers')
+        fetch('https://fleetmanager-admin.onrender.com/api/drivers')
             .then(response => response.json())
             .then(data => setDrivers(data.drivers))
             .catch(error => console.error('Error fetching drivers:', error));
@@ -24,7 +24,7 @@ const TotalDriver = () => {
                 {displayedDrivers.map(driver => (
                     <div key={driver.driverId} className="driver-card">
                         {driver.driverPhoto ? (
-                            <img src={`http://localhost:5000/${driver.driverPhoto}`} alt={driver.driverName} className="driver-photo" />
+                            <img src={`https://fleetmanager-admin.onrender.com/${driver.driverPhoto}`} alt={driver.driverName} className="driver-photo" />
                         ) : (
                             <FaUserCircle className="driver-icon" />
                         )}

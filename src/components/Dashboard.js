@@ -20,7 +20,7 @@ const Dashboard = () => {
     const [totalManagers, setTotalManagers] = useState(0);
     const [showSidebar, setShowSidebar] = useState(false);
     useEffect(() => {
-        fetch('http://localhost:5000/api/revenue')
+        fetch('https://fleetmanager-admin.onrender.com/api/revenue')
             .then(response => response.json())
             .then(data => {
                 const formattedData = Object.keys(data).map(key => ({ name: key, revenue: data[key] }));
@@ -28,7 +28,7 @@ const Dashboard = () => {
             })
             .catch(error => console.error('Error fetching revenue data:', error));
 
-        fetch('http://localhost:5000/api/trip-statistics')
+        fetch('https://fleetmanager-admin.onrender.com/api/trip-statistics')
             .then(response => response.json())
             .then(data => {
                 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -40,17 +40,17 @@ const Dashboard = () => {
             })
             .catch(error => console.error('Error fetching trip statistics:', error));
 
-        fetch('http://localhost:5000/api/total-vehicles')
+        fetch('https://fleetmanager-admin.onrender.com/api/total-vehicles')
             .then(response => response.json())
             .then(data => setTotalVehicles(data.totalVehicles))
             .catch(error => console.error('Error fetching total vehicles:', error));
 
-        fetch('http://localhost:5000/api/total-drivers')
+        fetch('https://fleetmanager-admin.onrender.com/api/total-drivers')
             .then(response => response.json())
             .then(data => setTotalDrivers(data.totalDrivers))
             .catch(error => console.error('Error fetching total drivers:', error));
 
-        fetch('http://localhost:5000/api/vehicles')
+        fetch('https://fleetmanager-admin.onrender.com/api/vehicles')
             .then(response => response.json())
             .then(data => {
                 const vehicleTypeCounts = data.vehicles.reduce((acc, vehicle) => {
@@ -66,14 +66,14 @@ const Dashboard = () => {
                 setVehicleTypeData(formattedData);
             })
             .catch(error => console.error('Error fetching vehicle data:', error));
-        fetch('http://localhost:5000/api/total-managers')
+        fetch('https://fleetmanager-admin.onrender.com/api/total-managers')
             .then(response => response.json())
             .then(data => setTotalManagers(data.totalManagers))
             .catch(error => console.error('Error fetching total managers:', error));
     }, []);
 
     const handleGenerateId = () => {
-        fetch('http://localhost:5000/generate-manager-id')
+        fetch('https://fleetmanager-admin.onrender.com/generate-manager-id')
             .then(response => response.json())
             .then(data => setManagerId(data.managerId))
             .catch(error => console.error('Error generating manager ID:', error));
@@ -87,7 +87,7 @@ const Dashboard = () => {
             managerPhoneNumber
         };
 
-        fetch('http://localhost:5000/add-manager', {
+        fetch('https://fleetmanager-admin.onrender.com/add-manager', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

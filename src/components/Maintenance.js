@@ -11,7 +11,7 @@ const Maintenance = () => {
 
     const fetchDetails = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/api/maintenance-details/${vehicleNumber}`);
+            const response = await fetch(`https://fleetmanager-admin.onrender.com/api/maintenance-details/${vehicleNumber}`);
             if (!response.ok) {
                 throw new Error(`Error: ${response.status} ${response.statusText}`);
             }
@@ -26,7 +26,7 @@ const Maintenance = () => {
 
     const fetchVehicleData = async () => {
         try {
-            const response = await fetch('http://localhost:5000/api/vehicles');
+            const response = await fetch('https://fleetmanager-admin.onrender.com/api/vehicles');
             if (!response.ok) {
                 throw new Error(`Error: ${response.status} ${response.statusText}`);
             }
