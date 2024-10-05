@@ -36,6 +36,7 @@ app.get('/api/revenue', async (req, res) => {
             MPV: 0,
             Sedan: 0,
             Limousine: 0,
+            BUS: 0,
         };
 
         trips.forEach(trip => {
